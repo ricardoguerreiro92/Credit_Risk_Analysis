@@ -10,8 +10,60 @@
 ## Results
 ### Naive Random Oversampling
 ![naive_oversample](/resources/nro.png)
-1. Accuracy Score: 65.33%
-2. Precision High Risk: 1%
-3. Precision Low Risk: 100%
-4. Recall High Risk: 65%
-5. Recall Low Risk: 66%
+1. Balanced Accuracy Score: 65.33%
+2. True Negative: 48, False Positive: 26
+3. False Negative: 5,860 True Positive: 11,271
+4. Precision High Risk: 1%
+5. Precision Low Risk: 100%
+6. Recall High Risk: 65%
+7. Recall Low Risk: 66%
+
+### SMOTE
+![smote](/resources/smote.png)
+1. Balanced Accuracy Score: 67.88%
+2. True Negative: 50, False Positive: 24
+3. False Negative: 5,449 True Positive: 11,682
+4. Precision High Risk: 1%
+5. Precision Low Risk: 100%
+6. Recall High Risk: 68%
+7. Recall Low Risk: 68%
+
+### Cluster Centroids
+![cc](/resources/clustercentroids.png)
+1. Balanced Accuracy Score: 52.13%
+2. True Negative: 45, False Positive: 29
+3. False Negative: 9,688 True Positive: 7,443
+4. Precision High Risk: 0%
+5. Precision Low Risk: 100%
+6. Recall High Risk: 61%
+7. Recall Low Risk: 43%
+
+### SMOTEENN
+![smoteenn](/resources/smoteenn.png)
+1. Balanced Accuracy Score: 67.86%
+2. True Negative: 58, False Positive: 16
+3. False Negative: 7,309 True Positive: 9,822
+4. Precision High Risk: 1%
+5. Precision Low Risk: 100%
+6. Recall High Risk: 78%
+7. Recall Low Risk: 57%
+
+### Balanced Random Forest Classifier
+![brfc](/resources/balanced_random_forest_classifier.png)
+1. Balanced Accuracy Score: 76.65%
+2. True Negative: 47, False Positive: 27
+3. False Negative: 1,750 True Positive: 15,381
+4. Precision High Risk: 3%
+5. Precision Low Risk: 100%
+6. Recall High Risk: 64%
+7. Recall Low Risk: 90%
+
+### Easy Ensemble AdaBoost Classifier
+![eeac](/resources/easy_ensemble_adaboost_classifier.png)
+1. Balanced Accuracy Score: 93.00%
+2. True Negative: 68, False Positive: 6
+3. False Negative: 1,008 True Positive: 16,123
+4. Precision High Risk: 6%
+5. Precision Low Risk: 100%
+6. Recall High Risk: 92%
+7. Recall Low Risk: 94%
