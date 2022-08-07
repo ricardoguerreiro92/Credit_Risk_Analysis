@@ -67,3 +67,17 @@
 5. Precision Low Risk: 100%
 6. Recall High Risk: 92%
 7. Recall Low Risk: 94%
+
+## Summary
+We want our analysis to try and predict if a loan/credit is high risk or not so we performed a few tests with different supervised machine learning models to see which one would be a good one for future predictions.<br>In summary the models we tested performed as such:
+    - Naive Random Oversampling - Balanced Accuracy Score: 65.33% / Recall High Risk: 65%
+    - SMOTE - Balanced Accuracy Score: 67.88% / Recall High Risk: 68%
+    - Cluster Centroids - Balanced Accuracy Score: 52.13% / Recall High Risk: 61%
+    - SMOTEENN - Balanced Accuracy Score: 67.86% / Recall High Risk: 78%
+    - Balanced Random Forest Classifier - Balanced Accuracy Score: 76.65% / Recall High Risk: 64%
+    - Easy Ensemble AdaBoost Classifier - Balanced Accuracy Score: 93.00% / Recall High Risk: 92%
+
+Being able to have a good prediction score on high risk credits is one of the most important things for a bank/lender. If we want a model to not allow as many high risk credits to pass through we need to check the recall rate for the high risk.<br>As you can see the top recall is Easy Ensemble AdaBoost Classifier with 92% score.<br>It is also important if we can dive a little deeper and also get a model that sucessfully predict low risk credits that pass as high risk, for this we will need the recall rate for the low risk. Retrieving the recalls for low risk credits we see that two of the models shine in this matter, Balanced Random Fores Classifier with a 90% recall Low risk and Easy Ensemble AdaBoost Classifier with a 94%.
+
+#### Balanced Accuracy Score
+Furthermore we can check the balanced accuracy score to have a general idea on how well the model performs over others. When checking this we see Easy Ensemble AdaBoost Classifier with a 93% balanced accuracy score. With everything from balanced accuracy scires to recall rates I can confidently say that Easy Ensemble AdaBoost Classifier performs with stunning 90+% numbers which is a very good prediction rate!
